@@ -11,6 +11,7 @@
 - [x] [CSS :target selector für SPA like verhalten ohne JS](examples/css-target-selector) (https://codesandbox.io/s/css-target-selector-ow5vq)
 - [x] [wbr für Worttrennung](examples/wbr-word-break.html) (https://codesandbox.io/s/dialog-and-word-break-xd16k?file=/index.html)
 - [x] [Abkürzungen und Definitionen](examples/abbr-element.html)
+- [ ] [sub, sup, del, ins](examples/inline-text-markup.html)
 
 ## Sonstige Beispiele
 
