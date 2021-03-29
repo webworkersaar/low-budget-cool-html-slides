@@ -7,9 +7,9 @@
 ## Demos
 
 - [x] ping attribut bei <a href="..."> links (https://codesandbox.io/s/a-ping-attribute-spb95)
-- [x] [download attribute bei <a href="..."> links](examples/a-download-attribute.html) (https://codesandbox.io/s/a-download-file-15msu)
+- [x] [download attribute bei links](examples/a-download-attribute.html) (https://codesandbox.io/s/a-download-file-15msu)
 - [x] [CSS :target selector für SPA like verhalten ohne JS](examples/css-target-selector) (https://codesandbox.io/s/css-target-selector-ow5vq)
-- [x] [<wbr> für Wort-trennung](examples/wbr-word-break.html) (https://codesandbox.io/s/dialog-and-word-break-xd16k?file=/index.html)
+- [x] [wbr für Worttrennung](examples/wbr-word-break.html) (https://codesandbox.io/s/dialog-and-word-break-xd16k?file=/index.html)
 
 ## Sonstige Beispiele
 
