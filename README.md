@@ -4,13 +4,16 @@
 
 - [HTML Spec](https://html.spec.whatwg.org/multipage/)
 
-## Raw Ideensammlung
+## Demos
 
 - [x] ping attribut bei <a href="..."> links (https://codesandbox.io/s/a-ping-attribute-spb95)
-- [x] download attribute bei <a href="..."> links (https://codesandbox.io/s/a-download-file-15msu)
-- [x] CSS :target selector für SPA like verhalten ohne JS (https://codesandbox.io/s/css-target-selector-ow5vq)
-- [ ] HTML Dialog Element (https://codesandbox.io/s/dialog-and-word-break-xd16k?file=/index.html)
-- [ ] <wbr> für Wort-trennung (https://codesandbox.io/s/dialog-and-word-break-xd16k?file=/index.html)
+- [x] [download attribute bei <a href="..."> links](examples/a-download-attribute.html) (https://codesandbox.io/s/a-download-file-15msu)
+- [x] [CSS :target selector für SPA like verhalten ohne JS](examples/css-target-selector) (https://codesandbox.io/s/css-target-selector-ow5vq)
+- [x] [<wbr> für Wort-trennung](examples/wbr-word-break.html) (https://codesandbox.io/s/dialog-and-word-break-xd16k?file=/index.html)
+
+## Sonstige Beispiele
+
+- HTML Dialog Element (https://codesandbox.io/s/dialog-and-word-break-xd16k?file=/index.html)
 - [ ] Klick auf Label Element zum schnellzugriff auf ein Input Field <label>Foo<input name="foo"></label> ... da braucht man kein for="..."
 - [ ] <template> Element -> okay, das ist insbesondere mit JS Nützlich...
 - [ ] contenteditable attribute
