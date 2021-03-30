@@ -6,69 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
     <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-
       html,
       body {
-        margin: 0;
-      }
-
-      nav {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        background-color: aqua;
-        color: black;
-        width: 100vw;
-        min-height: 50px;
-      }
-
-      nav a {
-        color: inherit;
-      }
-      section {
-        border: 1px dotted blue;
-        padding: 10px;
-        display: none;
-        width: 100vw;
-        height: 100vh;
-      }
-
-      section:target {
-        display: block;
-        background-color: yellow;
+        font-size: 150%;
       }
     </style>
   </head>
   <body>
-    <nav>
-      <ol>
-        <li><a href="/">Reset</a></li>
-        <li><a href="#foo">First section</a></li>
-        <li><a href="#bar">Second section</a></li>
-      </ol>
-    </nav>
-    <section id="foo">
-      <h1>Section FOO</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores cumque
-        ullam esse laboriosam rerum, reiciendis beatae officiis architecto
-        temporibus sit ut soluta perferendis consectetur odio quam, alias
-        aspernatur. Asperiores, fugiat!
-      </p>
-    </section>
-    <section id="bar">
-      <h1>Section BAR</h1>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-        deserunt hic dolorem illo totam quia ratione ducimus cupiditate,
-        excepturi voluptatem blanditiis ullam quas id. Accusamus nesciunt
-        architecto itaque numquam aperiam.
-      </p>
-    </section>
+    <a href="#" download>Download me</a>
   </body>
 </html>
