@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "alias": ["rayveal.tech"],
   "builds": [
     {
       "src": "./docs/**/*.*",
