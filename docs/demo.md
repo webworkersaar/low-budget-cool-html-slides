@@ -1,19 +1,8 @@
 <!-- .slide: data-state="layout-title"  -->
 
-# RayVeal
+# Low budget, cool HTML
 
-## Opinionated Reveal.js
-
-<p>A markdown first presentation framework.<br> Based on reveal.js with preinstalled plugins, a dash of Bootstrap and sweet extras.</p>
-<p class="no-fragment btn-group" role="group" aria-label="Basic example">
-<a class="btn btn-lg btn-warning text-dark" href="https://github.com/planetoftheweb/rayveal">Github Repo</a>
-<a class="btn btn-lg btn-light text-dark" href="https://rayveal.tech">Demo</a>
-</p>
-
-<p class="no-fragment small mt-4"><span class="badge bg-light text-dark mr-1 ml-2">&larr; &rarr;</span> navigate
-<span class="badge bg-light text-dark mr-1 ml-2">t</span>toolbar
-<span class="badge bg-light text-dark mr-1 ml-2">m</span>menu
-<span class="badge bg-light text-dark mr-1 ml-2">esc</span>overview</p>
+## HTML <del>sucks</del> <ins>rocks</ins>!
 
 ---
 
@@ -41,7 +30,9 @@ The persistent navigation bar at the bottom is on every page. It will disappear 
     <a href="https://bit.ly/thenext50">bit.ly/thenext50</a> &bull;
     <strong>Contact:</strong>
     <a href="https://www.linkedin.com/in/planetoftheweb">LinkedIn</a> |
-    <a href="https://www.linkedin.com/learning/instructors/ray-villalobos">courses</a>
+    <a href="https://www.linkedin.com/learning/instructors/ray-villalobos"
+      >courses</a
+    >
     | <a href="https://twitter.com/planetoftheweb">@planetoftheweb</a> |
     <a href="https://github.com/planetoftheweb">github</a>
   </div>
@@ -106,7 +97,7 @@ const electron = require("electron");
 const BrowserWindow = electron.BrowserWindow;
 const app = electron.app;
 
-app.on("ready", function() {
+app.on("ready", function () {
   const appWindow;
   appWindow = new BrowserWindow();
   appWindow.loadURL("https://raybo.org");

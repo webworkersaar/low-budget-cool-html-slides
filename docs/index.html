@@ -9,7 +9,10 @@
 
     <title>Learning</title>
 
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
 
@@ -31,7 +34,7 @@
     <div class="reveal">
       <div class="slides">
         <section
-          data-markdown="slides/demo.md"
+          data-markdown="slides/low-budget-cool-html.md"
           data-separator="\n---\n"
           data-separator-vertical="^\n\n"
           data-separator-notes="\n> >"
@@ -43,30 +46,29 @@
       <footer class="footer fadein">
         <div class="persistent">
           <strong class="text-warning">Links:</strong>
-          <a class="text-decoration-none" href="http://rayveal.tech">demo</a>
-          <a class="text-decoration-none" href="http://github.com/planetoftheweb/rayveal">repo</a>
           <a
             class="text-decoration-none"
-            href="https://www.linkedin.com/learning/instructors/ray-villalobos"
-            >courses</a
+            href="https://github.com/webworkersaar/low-budget-cool-html"
+            >Beispiele</a
           >
-          <a class="text-decoration-none" href="raybo.org">blog</a> |
-          <strong class="text-warning ml-1">Contact:</strong>
-          <a class="text-decoration-none" href="http://twitter.com/planetoftheweb"
-            >@planetoftheweb</a
+          <a
+            class="text-decoration-none"
+            href="https://html.spec.whatwg.org/multipage/"
+            >HTML Spec</a
           >
-          <a class="text-decoration-none" href="https://www.linkedin.com/in/planetoftheweb"
-            >LinkedIn</a
-          >
-          <a class="text-decoration-none" href="http://github.com/planetoftheweb">Github</a>
         </div>
 
         <div class="small mt-1">
-          <span class="badge bg-secondary mr-1 ml-2 font-weight-bold">&larr; &rarr;</span>
+          <span class="badge bg-secondary mr-1 ml-2 font-weight-bold"
+            >&larr; &rarr;</span
+          >
           navigate
-          <span class="badge bg-secondary mr-1 ml-2 font-weight-bold">t</span>toolbar
-          <span class="badge bg-secondary mr-1 ml-2 font-weight-bold">m</span>menu
-          <span class="badge bg-secondary mr-1 ml-2 font-weight-bold">esc</span>overview
+          <span class="badge bg-secondary mr-1 ml-2 font-weight-bold">t</span
+          >toolbar
+          <span class="badge bg-secondary mr-1 ml-2 font-weight-bold">m</span
+          >menu
+          <span class="badge bg-secondary mr-1 ml-2 font-weight-bold">esc</span
+          >overview
         </div>
       </footer>
       <!-- ADD PERSISTENT NAVBAR CODE HERE -->
@@ -107,62 +109,62 @@
         height: 720,
         minScale: 0,
         maxScale: 1.25,
-        display: 'flex',
+        display: "flex",
         history: true,
 
         center: false,
         controls: false,
         progress: false,
         rollingLinks: false,
-      })
+      });
 
       //Add Keyboard Shortcuts
       Reveal.configure({
         keyboard: {
           // hide footer using the t key
           84: () => {
-            var myNode = document.querySelector('.footer')
-            myNode.classList.toggle('fadeout')
+            var myNode = document.querySelector(".footer");
+            myNode.classList.toggle("fadeout");
           },
         },
-      })
+      });
 
       // When Reveal.js has finished loading
-      Reveal.on('ready', (event) => {
+      Reveal.on("ready", (event) => {
         //Modify all the PRE>CODE tags so they have line numbers
-        let preCodeNodes = document.querySelectorAll('pre code')
+        let preCodeNodes = document.querySelectorAll("pre code");
         preCodeNodes.forEach(function (item) {
-          item.dataset.lineNumbers = true
-        }, this)
+          item.dataset.lineNumbers = true;
+        }, this);
 
         //Add a fragment class to all list items by default
         let fragmentNodes = document.querySelectorAll(
-          '.slide li, .slide section > p, .slide pre code:not(.has-highlights),.slide embed, .slide iframe:not(data-allowfullscreen), .slide table:not(.hljs-ln), .slide canvas'
-        )
+          ".slide li, .slide section > p, .slide pre code:not(.has-highlights),.slide embed, .slide iframe:not(data-allowfullscreen), .slide table:not(.hljs-ln), .slide canvas"
+        );
         fragmentNodes.forEach(function (item) {
           //also animate them from the leftf
-          item.classList.add('fragment', 'fade-left')
-        }, this)
+          item.classList.add("fragment", "fade-left");
+        }, this);
 
         //Make code tags also automatically editable
-        let codeNodes = document.querySelectorAll('code')
+        let codeNodes = document.querySelectorAll("code");
         codeNodes.forEach(function (item) {
-          item.contentEditable = true
-        }, this)
+          item.contentEditable = true;
+        }, this);
 
         //Hide bottom toolbar automatically after 5 seconds
         setTimeout(function () {
-          let myNode = document.querySelector('.footer')
-          myNode.classList.toggle('fadeout')
-        }, 5000)
-      })
+          let myNode = document.querySelector(".footer");
+          myNode.classList.toggle("fadeout");
+        }, 5000);
+      });
 
-      Reveal.on('menu-ready', (event) => {
-        fetch('slides/index.json')
+      Reveal.on("menu-ready", (event) => {
+        fetch("slides/index.json")
           .then((response) => response.json())
           .then((data) => {
             var menuData = data.map(function (slide) {
-              simpleName = slide.replace(/\/(.*)\.md/i, '$1')
+              simpleName = slide.replace(/\/(.*)\.md/i, "$1");
               return (
                 '<div class="slide-menu-item"><a href="?d=' +
                 simpleName +
@@ -171,11 +173,13 @@
                 '</a> | <a href="slides/' +
                 slide +
                 '">notes</a></div>'
-              )
-            })
-            document.querySelector('.slide-menu-items').innerHTML = menuData.join('')
-          })
-      })
+              );
+            });
+            document.querySelector(
+              ".slide-menu-items"
+            ).innerHTML = menuData.join("");
+          });
+      });
 
       // When the menu plugin has finished loading.
     </script>
