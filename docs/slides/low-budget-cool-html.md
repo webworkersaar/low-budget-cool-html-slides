@@ -89,3 +89,98 @@ Upload von files -> Datei typen beschränken
 # Auto-complete in forms fine-tunen
 
 [Artikel](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values)
+
+---
+
+# Lazy loading
+
+```html
+<img src="foo.png" loading="lazy" />
+```
+
+[Artikel](https://web.dev/browser-level-image-lazy-loading/)
+
+---
+
+# rel=noopener,<br/> noreferrer,<br/>nofollow
+
+[Artikel](https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/)
+
+---
+
+# Default Referrer Policy
+
+```html
+<meta name="referrer" content="default" />
+```
+
+[Artikel](https://w3c.github.io/webappsec-referrer-policy/#referrer-policy)
+
+---
+
+# input `formmethod` Attribut
+
+Change http method to submit form for input elements via formmethod attribute
+
+[Artikel](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod)
+
+---
+
+# Autocompletion mit `<datalist>`
+
+```html
+<label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+<datalist id="ice-cream-flavors">
+  <option value="Chocolate"></option>
+  <option value="Coconut"></option>
+  <option value="Mint"></option>
+  <option value="Strawberry"></option>
+  <option value="Vanilla"></option>
+</datalist>
+```
+
+<label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+<datalist id="ice-cream-flavors">
+  <option value="Chocolate"></option>
+  <option value="Coconut"></option>
+  <option value="Mint"></option>
+  <option value="Strawberry"></option>
+  <option value="Vanilla"></option>
+</datalist>
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
+
+---
+
+# `<details>` & `<summary>` - Built-in expandables
+
+```html
+<details>
+  <summary>System Requirements</summary>
+  <p>
+    Requires a computer running an operating system. The computer must have some
+    memory and ideally some kind of long-term storage. An input device as well
+    as some form of output device is recommended.
+  </p>
+</details>
+```
+
+<details>
+  <summary>System Requirements</summary>
+  <p>Requires a computer running an operating system. The computer
+  must have some memory and ideally some kind of long-term storage.
+  An input device as well as some form of output device is
+  recommended.</p>
+</details>
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+
+---
+
+# Animierte SVGs
+
+<iframe width="100%" height="300" src="//jsfiddle.net/zrhL1jqx/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
