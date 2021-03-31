@@ -8,7 +8,7 @@
 
 <!-- .slide: data-state="layout-title" data-transition="zoom" class="bg-dark"-->
 
-# `<a>` Attribute
+# `<a>` Element `ping` Attribute
 
 ---
 
@@ -25,7 +25,7 @@
 
 ---
 
-# `download` Attribut
+# `<a>` Element `download` Attribut
 
 ```html
 <a href="#" download>Download me</a>
@@ -35,19 +35,19 @@
 
 ---
 
-# CSS :target selector (für SPA Verhalten)
+# CSS :target Selector for SPA like View Navigation
 
 <iframe src="../examples/css-target-selector.html" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"></iframe>
 
 ---
 
-# HTML und Zeilenumbrüche
+# HTML and controlled Word-breaks
 
 ![word-break-html](../images/wbr.png)
 
 ---
 
-# HTML und Zeilenumbrüche
+# Example for controlled Word-breaks `<wbr>`
 
 <iframe src="../examples/wbr-word-break.html" style="width:100%; height: 50vh; border:0; border-radius: 4px; overflow:hidden;"></iframe>
 
@@ -59,7 +59,9 @@
 
 ---
 
-Einfacher Weg auf der Serverseite herauszufinden ob der aktuelle User-Agent JS aktiviert hat.
+# How to check for JavaScript availability without JavaScript?
+
+Simple way to check for JS availability with `<noscript>` and cookies:
 
 ```html
 <noscript>
@@ -68,19 +70,25 @@ Einfacher Weg auf der Serverseite herauszufinden ob der aktuelle User-Agent JS a
 </noscript>
 ```
 
-[Artikel](https://www.codeproject.com/Tips/1217469/How-to-Detect-if-Client-has-JavaScript-Enabled-Dis)
+[Article](https://www.codeproject.com/Tips/1217469/How-to-Detect-if-Client-has-JavaScript-Enabled-Dis)
 
 ---
 
-Upload von files -> Datei typen beschränken
+# Fine-tuning `<input>` elements for File Uploads 
 
-`<input type=”file”>` -> Mehrere dateien hochladen mit multiple attribute
+File upload -> Restrict file types
 
 `<input type="file" accept=".xls,.xlsx" />`
 
+Allow upload of multiple files, or emails via `multiple` attribute.
+
+`<input type=”file” multiple>` -> Allows to specify multiple files.
+
+`<input type=”email” multiple>` -> Allows to specify multiple comma separated email addresses.
+
 ---
 
-# Form validierungsstatus über CSS anzeigen
+# Display Form validation state via CSS
 
 <iframe width="100%" height="300" src="//jsfiddle.net/thomasdarimont/yp3z4o7b/3/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
@@ -88,37 +96,41 @@ Upload von files -> Datei typen beschränken
 
 # Auto-complete in forms fine-tunen
 
-[Artikel](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values)
+[Article](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values)
 
 ---
 
-# Lazy loading
+# Lazy loading of Images
 
 ```html
 <img src="foo.png" loading="lazy" />
 ```
 
-[Artikel](https://web.dev/browser-level-image-lazy-loading/)
+[Article](https://web.dev/browser-level-image-lazy-loading/)
 
 ---
 
-# rel=noopener,<br/> noreferrer,<br/>nofollow
+# Protect your users Privacy with `<a>` attributes 
 
-[Artikel](https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/)
+```html
+<a href="https://www.example.com" rel="noopener noreferrer nofollow">Link</a>
+```
+
+[Article](https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/)
 
 ---
 
-# Default Referrer Policy
+# Protect your users Privacy with default Referrer Policy
 
 ```html
 <meta name="referrer" content="default" />
 ```
 
-[Artikel](https://w3c.github.io/webappsec-referrer-policy/#referrer-policy)
+[Article](https://w3c.github.io/webappsec-referrer-policy/#referrer-policy)
 
 ---
 
-# input `formmethod` Attribut
+# Change form Method via `<input>` Attribut `formmethod`
 
 Change http method to submit form for input elements via formmethod attribute
 
@@ -126,7 +138,7 @@ Change http method to submit form for input elements via formmethod attribute
 
 ---
 
-# Autocompletion mit `<datalist>`
+# Simple autocompletion with `<datalist>`
 
 ```html
 <label for="ice-cream-choice">Choose a flavor:</label>
@@ -156,7 +168,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
 
 ---
 
-# `<details>` & `<summary>` - Built-in expandables
+# Built-in expandables with `<details>` & `<summary>`
 
 ```html
 <details>
@@ -181,6 +193,6 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
 
 ---
 
-# Animierte SVGs
+# Integrate animated SVGs in HTML
 
 <iframe width="100%" height="300" src="//jsfiddle.net/zrhL1jqx/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
