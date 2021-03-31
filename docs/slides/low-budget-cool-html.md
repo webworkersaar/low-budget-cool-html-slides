@@ -1,4 +1,4 @@
-<!-- .slide: data-state="layout-title" data-transition="zoom" class="bg-dark" -->
+<!-- .slide: data-state="layout-title" data-transition="zoom" -->
 
 # ![Title](../images/title-logo.jpg)
 
