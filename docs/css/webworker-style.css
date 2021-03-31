@@ -1,7 +1,7 @@
 /* Heading spacings */
 
 /* Title slide h1*/
-.reveal [data-state="layout-title"] h1 {
+.reveal h1 {
   margin-bottom: 1em;
 }
 
@@ -11,7 +11,20 @@
 }
 
 /* Force yellow h1 and h2 on dark layout title */
-.reveal [data-state="layout-title"].bg-dark h1,
-.reveal [data-state="layout-title"].bg-dark h2 {
+.reveal.reveal .bg-dark h1,
+.reveal.reveal .bg-dark h2 {
   color: var(--bs-yellow);
+}
+
+.bg-dark p {
+  color: white;
+}
+
+iframe {
+  background-color: white;
+}
+
+.reveal.reveal code {
+  background-color: white;
+  color: black;
 }
