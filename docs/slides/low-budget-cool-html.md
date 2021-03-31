@@ -16,9 +16,26 @@
 
 # <a href="https://codesandbox.io/s/a-ping-attribute-spb95" target="_blank">`ping` Example</a>
 
-# <a href="https://jsfiddle.net/thomasdarimont/8bq0zmtw/2/" target="_blank">`ping` Example with local links</a>
-
 <iframe src="https://codesandbox.io/embed/a-ping-attribute-spb95?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="a-ping-attribute"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
+---
+
+<!-- .slide: data-transition="none" -->
+
+# `<a>` Element `ping` Attribute works for local links too!
+
+```html
+<a href="#/3/0/1" ping="https://20210301webworkersaar.requestcatcher.com/callbacks/myping" >`ping` Example with local links</a>
+```
+
+<a href="#/3/0/1" ping="https://20210301webworkersaar.requestcatcher.com/callbacks/myping" >`ping` Example with local links</a>
+
+<iframe src="https://20210301webworkersaar.requestcatcher.com/"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="a-ping-attribute"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
