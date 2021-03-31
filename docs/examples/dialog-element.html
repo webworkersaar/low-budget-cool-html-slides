@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Example</title>
+</head>
+
+<body>
+
+    <dialog id="shipDialog">
+        <form method=dialog>
+            <p>A ship has arrived in the harbour.</p>
+            <button type=submit value="board">Board the ship</button>
+            <button type=submit value="call">Call to the captain</button>
+        </form>
+    </dialog>
+    <button onclick="shipDialog.showModal()">
+        Show Dialog
+    </button>
+    <script>
+        var shipDialog = document.getElementById('shipDialog');
+        shipDialog.onclose = function (event) {
+            if (shipDialog.returnValue == 'board') {
+                console.log(shipDialog.returnValue);
+            } else {
+                console.log(shipDialog.returnValue);
+            }
+        };
+    </script>
+
+</body>
+
+</html>
