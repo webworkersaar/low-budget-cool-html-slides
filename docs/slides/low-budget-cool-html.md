@@ -299,7 +299,7 @@ Use-case
 
 # Built-in expandables with `<details>` & `<summary>`
 
-The HTML Details Element (<details>) creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label must be provided using the <summary> element.
+The HTML Details Element (`<details>`) creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label must be provided using the `<summary>` element.
 
 ```html
 <details>
