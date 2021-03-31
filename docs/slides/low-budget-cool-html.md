@@ -263,7 +263,9 @@ Change http method to submit form for input elements via formmethod attribute
 
 # Simple autocompletion with `<datalist>`
 
-Explain
+The HTML <datalist> element contains a set of <option> elements that represent the permissible or recommended options available to choose from within other controls.
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist">Datalist at MDN</a>
 
 Use-case
 
@@ -291,13 +293,13 @@ Use-case
   <option value="Vanilla"></option>
 </datalist>
 
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
-
 ---
 
 <!-- .slide: class="bg-white" -->
 
 # Built-in expandables with `<details>` & `<summary>`
+
+The HTML Details Element (<details>) creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label must be provided using the <summary> element.
 
 ```html
 <details>
@@ -326,6 +328,41 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
 
 # Integrate animated SVGs in HTML
 
-https://jsfiddle.net/thomasdarimont/wm3Lh0fu/4/
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element
 
-<iframe width="100%" height="300" src="//jsfiddle.net/zrhL1jqx/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<a href="https://jsfiddle.net/thomasdarimont/wm3Lh0fu/4/" target="_blank">Animated SVG Example</a>
+
+```html
+<div>
+<h1>SVG in HTML!</h1>
+<svg viewBox="0 0 64 64" width="64" height="64">
+  <circle id="spinner" cx="32" cy="32" r="16"></circle>
+</svg>
+</div>
+```
+
+```css
+/* What we want to animate */
+#spinner {
+  fill: yellow;
+
+  /* Refer to the animation  */
+  animation-name: spinner-ani;
+  
+  /* How should the animation be executed? */
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+/* What should happen during the animation? */
+@keyframes spinner-ani {
+    from {
+       fill: red;
+       r: 5;
+    }
+    to {
+       fill: yellow;
+       r: 32;
+    }
+}
+```
