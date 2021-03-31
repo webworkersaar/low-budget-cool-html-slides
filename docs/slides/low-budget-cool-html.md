@@ -153,7 +153,21 @@ The :target CSS pseudo-class represents a unique element (the target element) wi
 
 <!-- .slide: data-state="layout-title" class="bg-dark" -->
 
-# Inline Text markup
+# Inline Text Markup
+
+```html
+<h1>Inline Text Markup</h1>
+<h2><pre>kbd</pre></h2>
+<p>
+  Please press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Entf</kbd> to close the
+  app.
+</p>
+<h2>sub and sup</h2>
+<p>H<sub>2</sub>O</p>
+<p>Satz des Pythagoras: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+<h2><del>del</del>, <ins>ins</ins></h2>
+<p>HTML <del>sucks</del> <ins>rocks</ins>!</p>
+```
 
 <iframe src="../examples/inline-text-markup.html" style="width:100%; height: 50vh; border:0; border-radius: 4px; overflow:hidden;"></iframe>
 
@@ -161,11 +175,72 @@ The :target CSS pseudo-class represents a unique element (the target element) wi
 
 <!-- .slide: data-state="layout-title" class="bg-dark" -->
 
-# Display Form validation state via CSS
+# Display Form Validation State via CSS
 
-<iframe width="100%" height="300" src="//jsfiddle.net/thomasdarimont/yp3z4o7b/3/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+```html
+<form>
+  <label for="email">Email</label>
+  <input type="email" 
+    id="email" 
+    name="email" 
+    placeholder="Enter your email"
+    >
+  <span></span>
+</form>
+```
 
-https://jsfiddle.net/thomasdarimont/yp3z4o7b/11/
+```css
+input[type='email'] {
+  width: 200px;
+}
+
+input[type='email']:invalid {
+  border: 1px solid red;
+}
+
+input[type='email']:invalid + span::after {
+    color:red;
+    content: " x";
+}
+
+input[type='email']:valid + span::after {
+    color:green;
+    content: " ✔";
+}
+```
+
+<code>
+<style>
+  input[type='email'] {
+  width: 400px;
+}
+
+input[type='email']:invalid {
+  border: 1px solid red;
+}
+
+input[type='email']:invalid + span::after {
+    color:red;
+    content: " x";
+}
+
+input[type='email']:valid + span::after {
+    color:green;
+    content: " ✔";
+}
+</style>
+<form>
+  <label for="email">Email</label>
+  <input type="email" 
+    id="email" 
+    name="email" 
+    placeholder="Enter your email"
+    >
+  <span></span>
+</form>
+</code>
+
+<a href="https://jsfiddle.net/thomasdarimont/yp3z4o7b/11/" target="_blank">Form Validation State Example</a>
 
 ---
 
@@ -183,11 +258,53 @@ Allow upload of multiple files, or emails via `multiple` attribute.
 
 - Allow to specify multiple comma separated email addresses via `<input type=”email” multiple>`
 
+<style>
+  input[type='email'] {
+  width: 400px;
+}
+
+input[type='email']:invalid {
+  border: 1px solid red;
+}
+
+input[type='email']:invalid + span::after {
+    color:red;
+    content: " x";
+}
+
+input[type='email']:valid + span::after {
+    color:green;
+    content: " ✔";
+}
+</style>
+<form>
+  <label for="email">Email</label>
+  <input type="email" 
+    id="email" 
+    name="email" 
+    placeholder="Enter your email"
+    multiple
+    >
+  <span></span>
+</form>
 ---
 
 <!-- .slide: data-state="layout-title" class="bg-dark" -->
 
-# Auto-complete in forms fine-tunen
+# Auto-completion in Forms
+
+The HTML autocomplete attribute is available on <input> elements that take a text or numeric value as input, <textarea> elements, <select> elements, and <form> elements. autocomplete lets web developers specify what if any permission the user agent has to provide automated assistance in filling out form field values, as well as guidance to the browser as to the type of information expected in the field.
+
+For example:
+- "off"
+- "on"
+- "name"
+- "email"
+- "username"
+- "new-password"
+- "current-password"
+- "one-time-code"
+- ... any many many more
 
 [Article](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values)
 
@@ -250,6 +367,13 @@ nofollow Indicates that the linked document is not endorsed by the author of thi
 <!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # Protect your users Privacy with default Referrer Policy
+
+There are three fundamental values of the rel attribute of the anchor tag. They are noreferrer, noopener, and nofollow.
+
+- rel="noopener" you use on all links opening in new tabs using the target _blank. There are security implications if you don’t use the noopener value on your links opening in new tabs. A malicious attacker can use the window.opener object to change the content and location of the originating page.
+- rel="noreferrer" can serve a similar purpose as the noopener, especially in the older browsers. Hence, it makes sense to use them both. Additionally, noreferrer can affect your analytics and report traffic as direct instead of referral.
+- rel="nofollow" will inform search engines not to pass the link juice to the linked page, and it will not pass PageRank. You can consider it as a value which is used when you want to link to some another page but without “endorsing” it. It is the only rel value on this list with a tangible effect on SEO efforts.
+
 
 ```html
 <a href="https://www.example.com" rel="noopener noreferrer nofollow">Link</a>
