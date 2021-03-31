@@ -14,7 +14,7 @@
 
 <!-- .slide: data-transition="none" -->
 
-# <a href="https://codesandbox.io/s/a-ping-attribute-spb95" target="_blank">`ping`</a>
+# <a href="https://codesandbox.io/s/a-ping-attribute-spb95" target="_blank">`ping` Example</a>
 
 <iframe src="https://codesandbox.io/embed/a-ping-attribute-spb95?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
