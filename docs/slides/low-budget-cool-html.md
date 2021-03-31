@@ -251,18 +251,6 @@ nofollow	Indicates that the linked document is not endorsed by the author of thi
 
 <!-- .slide: class="bg-white" -->
 
-# Protect your users Privacy with default Referrer Policy
-
-```html
-<meta name="referrer" content="default" />
-```
-
-[Article](https://w3c.github.io/webappsec-referrer-policy/#referrer-policy)
-
----
-
-<!-- .slide: class="bg-white" -->
-
 # Change form Method via `<input>` Attribut `formmethod`
 
 Change http method to submit form for input elements via formmethod attribute
