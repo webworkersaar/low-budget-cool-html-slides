@@ -223,13 +223,23 @@ Indicates how the browser should load the image:
 
 <!-- .slide: class="bg-white" -->
 
-# Protect your users Privacy with `<a>` attributes
+# Additional values for `rel` attribute of the `<a>` element.
 
 Explain the problem
 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types
+
 - referrer
 - opener
-- nofollow
+- follow
+
+nofollow	Indicates that the linked document is not endorsed by the author of this one, for example if it has no control over it, if it is a bad example or if there is commercial relationship between the two (sold link). This link type may be used by some search engines that use popularity ranking techniques.
+
+noreferrer	
+Prevents the browser, when navigating to another page, to send this page address, or any other value, as referrer via the Referer: HTTP header.
+(In Firefox, before Firefox 37, this worked only in links found in pages. Links clicked in the UI, like "Open in a new tab" via the contextual menu, ignored this).
+
+nofollow	Indicates that the linked document is not endorsed by the author of this one, for example if it has no control over it, if it is a bad example or if there is commercial relationship between the two (sold link). This link type may be used by some search engines that use popularity ranking techniques.
 
 ```html
 <a href="https://www.example.com" rel="noopener noreferrer nofollow">Link</a>
