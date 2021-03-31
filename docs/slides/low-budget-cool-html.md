@@ -159,17 +159,33 @@ Allow upload of multiple files, or emails via `multiple` attribute.
 
 ---
 
-# Lazy loading of Images
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
+# Lazy-Loading for Images
 
-Lazy loading for images "above the fold".
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+Lazy loading is a strategy to identify resources as non-blocking (non-critical) and load these only when needed. It's a way to shorten the length of the critical rendering path, which translates into reduced page load times.
+</blockquote>
 
-TODO add Example to show lazy loading
+Indicates how the browser should load the image:
+- eager: Loads the image immediately, regardless of whether or not the image is currently within the visible viewport (default).
+- lazy: Defers loading the image until it reaches a calculated distance from the viewport, as defined by the browser.
 
 ```html
 <img src="foo.png" loading="lazy" />
 ```
 
 [Article](https://web.dev/browser-level-image-lazy-loading/)
+
+---
+
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
+
+## Example Lazy-Loading
+
+<a href="https://sczvj.sse.codesandbox.io/lazy" target="_blank">Lazy Image loading example</a>
+
+<a href="https://codesandbox.io/s/admiring-wind-sczvj?file=/src/lazy.html" target="_blank">Code</a>
 
 ---
 
