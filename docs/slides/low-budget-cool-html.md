@@ -101,9 +101,9 @@ File upload -> Restrict file types
 
 Allow upload of multiple files, or emails via `multiple` attribute.
 
-`<input type=”file” multiple>` -> Allows to specify multiple files.
+- Allow to specify multiple files via `<input type=”file” multiple>` 
 
-`<input type=”email” multiple>` -> Allows to specify multiple comma separated email addresses.
+- Allow to specify multiple comma separated email addresses via `<input type=”email” multiple>`
 
 ---
 
