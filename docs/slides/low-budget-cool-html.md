@@ -46,7 +46,9 @@ JS Alternative: [Beacon API](https://developer.mozilla.org/en-US/docs/Web/API/Be
 
 # `<a>` Element `ping` Attribute
 
-## <a href="https://codesandbox.io/s/a-ping-attribute-spb95?file=/src/index.js" target="_blank">Example 2</a>
+## Example 2
+
+<a href="https://codesandbox.io/s/a-ping-attribute-spb95?file=/src/index.js" target="_blank">Another `ping` Example - external links</a>
 
 ---
 
@@ -67,7 +69,7 @@ With filename: `<a href="..." download="foo.html">`
 
 <code class="code-primary">Alternative</code> Server side content-disposition...?
 
-<code class="code-info">Info</code> Only works for same-origin URLs, or the `blob:` and `data:` schemes.
+<code class="code-info">Note:</code> This only works for same-origin URLs, or the `blob:` and `data:` schemes.
 
 ---
 
@@ -102,6 +104,12 @@ The :target CSS pseudo-class represents a unique element (the target element) wi
 # CSS :target selector
 
 ## <a href="https://codesandbox.io/s/css-target-selector-ow5vq" target="_blank">Example</a>
+
+---
+
+## Example for `:target` Selector
+
+<a href="https://john-doe.neocities.org/#home" target="_blank">john-doe.neocities.org</a>
 
 ---
 
