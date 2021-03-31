@@ -9,3 +9,9 @@
 .reveal h1 + h2 {
   margin-bottom: 0.1em;
 }
+
+/* Force yellow h1 and h2 on dark layout title */
+.reveal [data-state="layout-title"].bg-dark h1,
+.reveal [data-state="layout-title"].bg-dark h2 {
+  color: var(--bs-yellow);
+}
