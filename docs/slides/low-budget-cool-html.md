@@ -1,4 +1,4 @@
-<!-- .slide: data-state="layout-title" data-transition="zoom" -->
+<!-- .slide: data-state="layout-title" data-transition="zoom" class="bg-dark" -->
 
 # ![Title](../images/title-logo.jpg)
 
@@ -15,11 +15,13 @@
 A space-separated list of URLs. When the link is followed, the browser will send POST requests with the body PING to the URLs. Typically for tracking.
 </blockquote>
 
-Use-cases: Tracking user behaviour
+<code class="code-primary">Use-cases</code> Tracking user behaviour
 
-JS Alternative: [Beacon API](https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API)
+<code>JS Alternative</code> [Beacon API](https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API)
 
 ---
+
+<!-- .slide: class="bg-white" -->
 
 # `<a>` Element `ping` Attribute
 
@@ -44,6 +46,8 @@ JS Alternative: [Beacon API](https://developer.mozilla.org/en-US/docs/Web/API/Be
    ></iframe>
 ---
 
+<!-- .slide: class="bg-white" -->
+
 # `<a>` Element `ping` Attribute
 
 ## Example 2
@@ -65,13 +69,15 @@ Without specific filename: `<a href="..." download>`
 
 With filename: `<a href="..." download="foo.html">`
 
-<code class="code-primary">Use-case</code> If you don't want to open the file inplace with an embedded viewer..
+<code class="code-primary">Use-case</code> If you don't want to open the file inplace with an embedded viewer.
 
 <code class="code-primary">Alternative</code> Server side content-disposition...?
 
 <code class="code-info">Note:</code> This only works for same-origin URLs, or the `blob:` and `data:` schemes.
 
 ---
+
+<!-- .slide: class="bg-white" -->
 
 # `<a>` Element `download` Attribute
 
@@ -101,6 +107,8 @@ The :target CSS pseudo-class represents a unique element (the target element) wi
 
 ---
 
+<!-- .slide: class="bg-white" -->
+
 # CSS :target selector
 
 ## <a href="https://codesandbox.io/s/css-target-selector-ow5vq" target="_blank">Example</a>
@@ -113,17 +121,35 @@ The :target CSS pseudo-class represents a unique element (the target element) wi
 
 ---
 
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
+
+# HTML & CSS for wrapping long words
+
+<code class="code-primary">Use-case</code> Readability
+
+<code class="code-primary">Alternatives</code> <a href="https://www.cjcid.com/articles/wrapping-long-words-css-html/" target="_blank">A lot!</a>
+
+---
+
+<!-- .slide: class="bg-white" -->
+
 # HTML and controlled Word-breaks
 
-Example for controlled Word-breaks `<wbr>`
-
-Explain Use-case
+## <a href="../examples/wbr-word-break.html" target="_blank">Example</a>
 
 ![word-break-html](../images/wbr.png)
 
-[Example ](../examples/wbr-word-break.html)
+---
+
+<!-- .slide: class="bg-white" -->
+
+# CSS and controlled Word-breaks
+
+## <a href="https://www.cjcid.com/articles/wrapping-long-words-css-html/#white-space" target="_blank">Example</a>
 
 ---
+
+<!-- .slide: class="bg-white" -->
 
 # Inline Text markup
 
@@ -139,6 +165,8 @@ https://jsfiddle.net/thomasdarimont/yp3z4o7b/11/
 
 ---
 
+<!-- .slide: class="bg-white" -->
+
 # Fine-tuning `<input>` elements for File Uploads
 
 File upload -> Restrict file types
@@ -153,6 +181,8 @@ Allow upload of multiple files, or emails via `multiple` attribute.
 
 ---
 
+<!-- .slide: class="bg-white" -->
+
 # Auto-complete in forms fine-tunen
 
 [Article](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values)
@@ -160,6 +190,7 @@ Allow upload of multiple files, or emails via `multiple` attribute.
 ---
 
 <!-- .slide: data-state="layout-title" class="bg-dark" -->
+
 # Lazy-Loading for Images
 
 <blockquote>
@@ -168,6 +199,7 @@ Lazy loading is a strategy to identify resources as non-blocking (non-critical) 
 </blockquote>
 
 Indicates how the browser should load the image:
+
 - eager: Loads the image immediately, regardless of whether or not the image is currently within the visible viewport (default).
 - lazy: Defers loading the image until it reaches a calculated distance from the viewport, as defined by the browser.
 
@@ -189,6 +221,8 @@ Indicates how the browser should load the image:
 
 ---
 
+<!-- .slide: class="bg-white" -->
+
 # Protect your users Privacy with `<a>` attributes
 
 Explain the problem
@@ -205,6 +239,8 @@ Explain the problem
 
 ---
 
+<!-- .slide: class="bg-white" -->
+
 # Protect your users Privacy with default Referrer Policy
 
 ```html
@@ -215,6 +251,8 @@ Explain the problem
 
 ---
 
+<!-- .slide: class="bg-white" -->
+
 # Change form Method via `<input>` Attribut `formmethod`
 
 Change http method to submit form for input elements via formmethod attribute
@@ -222,6 +260,8 @@ Change http method to submit form for input elements via formmethod attribute
 [Artikel](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod)
 
 ---
+
+<!-- .slide: class="bg-white" -->
 
 # Simple autocompletion with `<datalist>`
 
@@ -257,6 +297,8 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
 
 ---
 
+<!-- .slide: class="bg-white" -->
+
 # Built-in expandables with `<details>` & `<summary>`
 
 ```html
@@ -281,6 +323,8 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
 
 ---
+
+<!-- .slide: class="bg-white" -->
 
 # Integrate animated SVGs in HTML
 
