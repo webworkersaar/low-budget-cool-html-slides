@@ -46,9 +46,7 @@ JS Alternative: [Beacon API](https://developer.mozilla.org/en-US/docs/Web/API/Be
 
 # `<a>` Element `ping` Attribute
 
-## Example 2
-
-<a href="https://codesandbox.io/s/a-ping-attribute-spb95?file=/src/index.js" target="_blank">Another `ping` Example - external links/a>
+## <a href="https://codesandbox.io/s/a-ping-attribute-spb95?file=/src/index.js" target="_blank">Example 2</a>
 
 ---
 
@@ -65,9 +63,9 @@ Without specific filename: `<a href="..." download>`
 
 With filename: `<a href="..." download="foo.html">`
 
-Use-case: If you don't want to open the file inplace with an embedded viewer..
+<code class="code-primary">Use-case</code> If you don't want to open the file inplace with an embedded viewer..
 
-Alternative: Server side content-disposition...?
+<code class="code-primary">Alternative</code> Server side content-disposition...?
 
 <code class="code-info">Info</code> Only works for same-origin URLs, or the `blob:` and `data:` schemes.
 
@@ -86,15 +84,24 @@ Alternative: Server side content-disposition...?
 
 ---
 
-# CSS :target Selector for SPA like View Navigation
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
-Externalize!
+# CSS :target selector
 
-> The :target CSS pseudo-class represents a unique element (the target element) with an id matching the URL's fragment.
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+The :target CSS pseudo-class represents a unique element (the target element) with an id matching the URL's fragment.
+</blockquote>
 
-Add link to example
+<code class="code-primary">Use-case</code> SPA
 
-<iframe src="../examples/css-target-selector.html" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"></iframe>
+<code class="code-primary">Alternative</code> JS-based routing
+
+---
+
+# CSS :target selector
+
+## <a href="https://codesandbox.io/s/css-target-selector-ow5vq" target="_blank">Example</a>
 
 ---
 
