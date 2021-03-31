@@ -6,25 +6,35 @@
 
 ---
 
-<!-- .slide: data-transition="none" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # `<a>` Element `ping` Attribute
 
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+A space-separated list of URLs. When the link is followed, the browser will send POST requests with the body PING to the URLs. Typically for tracking.
+</blockquote>
 
-Explain ping attribute from MDN
+Use-cases: Tracking user behaviour
 
-Use-cases?
+JS Alternative: [Beacon API](https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API)
 
-JS Alternative: Beacon API -> https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API
+---
+
+# `<a>` Element `ping` Attribute
+
+## Example 1
 
 ```html
-<a href="#/1/0/1" 
-   ping="https://20210301webworkersaar.requestcatcher.com/callbacks/myping">
-   `ping` Example with local links
+<a
+  href="#/2/0/2"
+  ping="https://20210301webworkersaar.requestcatcher.com/callbacks/myping"
+>
+  `ping` Example with local links
 </a>
 ```
 
-<a href="#/1/0/1" ping="https://20210301webworkersaar.requestcatcher.com/callbacks/myping" >`ping` Example with local links</a>
+<a href="#/2/0/2" ping="https://20210301webworkersaar.requestcatcher.com/callbacks/myping" >`ping` Example with local links</a>
 
 <iframe src="https://20210301webworkersaar.requestcatcher.com/"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -32,23 +42,44 @@ JS Alternative: Beacon API -> https://developer.mozilla.org/en-US/docs/Web/API/B
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
+---
 
-<a href="https://codesandbox.io/s/a-ping-attribute-spb95?file=/src/index.js" target="_blank">`ping` Another Example external links/a>
+# `<a>` Element `ping` Attribute
+
+## Example 2
+
+<a href="https://codesandbox.io/s/a-ping-attribute-spb95?file=/src/index.js" target="_blank">Another `ping` Example - external links/a>
 
 ---
 
-# `<a>` Element `download` Attribut
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
-TODO: MDN download
+# `<a>` Element `download` Attribute
 
-Filename? -> last part of URL /foo/bar.txt?blabla&foobar=/file.doc
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+Prompts the user to save the linked URL instead of navigating to it. Can be used with or without a value.
+</blockquote>
 
-Use-case? If you don't want to open the file inplace with an embedded viewer..
+Without specific filename: `<a href="..." download>`
 
-Alternative? Server side content-disposition...?
+With filename: `<a href="..." download="foo.html">`
+
+Use-case: If you don't want to open the file inplace with an embedded viewer..
+
+Alternative: Server side content-disposition...?
+
+<code class="code-info">Info</code> Only works for same-origin URLs, or the `blob:` and `data:` schemes.
+
+---
+
+# `<a>` Element `download` Attribute
+
+## Example
 
 ```html
 <a href="#" download>Download me</a>
+<a href="#" download="slides.html">Download me as slides.html</a>
 ```
 
 <iframe src="../examples/a-download-attribute.html" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"></iframe>
@@ -75,7 +106,7 @@ Explain Use-case
 
 ![word-break-html](../images/wbr.png)
 
-[Example  ](../examples/wbr-word-break.html)
+[Example ](../examples/wbr-word-break.html)
 
 ---
 
@@ -90,7 +121,6 @@ Explain Use-case
 Simple way to check for JS availability with `<noscript>` and cookies:
 
 Requires cookies!
-
 
 ```html
 <noscript>
@@ -111,7 +141,7 @@ https://jsfiddle.net/thomasdarimont/yp3z4o7b/11/
 
 ---
 
-# Fine-tuning `<input>` elements for File Uploads 
+# Fine-tuning `<input>` elements for File Uploads
 
 File upload -> Restrict file types
 
@@ -119,10 +149,9 @@ File upload -> Restrict file types
 
 Allow upload of multiple files, or emails via `multiple` attribute.
 
-- Allow to specify multiple files via `<input type=”file” multiple>` 
+- Allow to specify multiple files via `<input type=”file” multiple>`
 
 - Allow to specify multiple comma separated email addresses via `<input type=”email” multiple>`
-
 
 ---
 
@@ -138,8 +167,6 @@ Lazy loading for images "above the fold".
 
 TODO add Example to show lazy loading
 
-
-
 ```html
 <img src="foo.png" loading="lazy" />
 ```
@@ -148,14 +175,13 @@ TODO add Example to show lazy loading
 
 ---
 
-# Protect your users Privacy with `<a>` attributes 
+# Protect your users Privacy with `<a>` attributes
 
 Explain the problem
 
 - referrer
 - opener
 - nofollow
-
 
 ```html
 <a href="https://www.example.com" rel="noopener noreferrer nofollow">Link</a>
@@ -191,7 +217,7 @@ Use-case
 
 ```html
 <label for="ice-cream-choice">Choose a flavor:</label>
-<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice"/>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
 
 <datalist id="ice-cream-flavors">
   <option value="Chocolate"></option>
