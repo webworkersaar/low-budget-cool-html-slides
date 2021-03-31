@@ -1,0 +1,11 @@
+/* Heading spacings */
+
+/* Title slide h1*/
+.reveal [data-state="layout-title"] h1 {
+  margin-bottom: 1em;
+}
+
+/* Example slides */
+.reveal h1 + h2 {
+  margin-bottom: 0.1em;
+}
