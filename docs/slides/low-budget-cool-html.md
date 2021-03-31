@@ -1,4 +1,4 @@
-<!-- .slide: data-state="layout-title" data-transition="zoom" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" data-transition="zoom" -->
 
 # ![Title](../images/title-logo.jpg)
 
@@ -21,7 +21,7 @@ A space-separated list of URLs. When the link is followed, the browser will send
 
 ---
 
-<!-- .slide: class="bg-white" -->
+<!-- .slide: class="bg-dark" -->
 
 # `<a>` Element `ping` Attribute
 
@@ -46,7 +46,7 @@ A space-separated list of URLs. When the link is followed, the browser will send
    ></iframe>
 ---
 
-<!-- .slide: class="bg-white" -->
+<!-- .slide: class="bg-dark" -->
 
 # `<a>` Element `ping` Attribute
 
@@ -77,7 +77,7 @@ With filename: `<a href="..." download="foo.html">`
 
 ---
 
-<!-- .slide: class="bg-white" -->
+<!-- .slide: class="bg-dark" -->
 
 # `<a>` Element `download` Attribute
 
@@ -107,13 +107,15 @@ The :target CSS pseudo-class represents a unique element (the target element) wi
 
 ---
 
-<!-- .slide: class="bg-white" -->
+<!-- .slide: class="bg-dark" -->
 
 # CSS :target selector
 
 ## <a href="https://codesandbox.io/s/css-target-selector-ow5vq" target="_blank">Example</a>
 
 ---
+
+<!-- .slide: class="bg-dark" -->
 
 ## Example for `:target` Selector
 
@@ -131,7 +133,7 @@ The :target CSS pseudo-class represents a unique element (the target element) wi
 
 ---
 
-<!-- .slide: class="bg-white" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # HTML and controlled Word-breaks
 
@@ -141,7 +143,7 @@ The :target CSS pseudo-class represents a unique element (the target element) wi
 
 ---
 
-<!-- .slide: class="bg-white" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # CSS and controlled Word-breaks
 
@@ -149,7 +151,7 @@ The :target CSS pseudo-class represents a unique element (the target element) wi
 
 ---
 
-<!-- .slide: class="bg-white" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # Inline Text markup
 
@@ -157,15 +159,17 @@ The :target CSS pseudo-class represents a unique element (the target element) wi
 
 ---
 
-# Display Form validation state via CSS
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
-https://jsfiddle.net/thomasdarimont/yp3z4o7b/11/
+# Display Form validation state via CSS
 
 <iframe width="100%" height="300" src="//jsfiddle.net/thomasdarimont/yp3z4o7b/3/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
+https://jsfiddle.net/thomasdarimont/yp3z4o7b/11/
+
 ---
 
-<!-- .slide: class="bg-white" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # Fine-tuning `<input>` elements for File Uploads
 
@@ -181,7 +185,7 @@ Allow upload of multiple files, or emails via `multiple` attribute.
 
 ---
 
-<!-- .slide: class="bg-white" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # Auto-complete in forms fine-tunen
 
@@ -221,7 +225,7 @@ Indicates how the browser should load the image:
 
 ---
 
-<!-- .slide: class="bg-white" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # Additional values for `rel` attribute of the `<a>` element.
 
@@ -233,13 +237,19 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types
 - opener
 - follow
 
-nofollow	Indicates that the linked document is not endorsed by the author of this one, for example if it has no control over it, if it is a bad example or if there is commercial relationship between the two (sold link). This link type may be used by some search engines that use popularity ranking techniques.
+nofollow Indicates that the linked document is not endorsed by the author of this one, for example if it has no control over it, if it is a bad example or if there is commercial relationship between the two (sold link). This link type may be used by some search engines that use popularity ranking techniques.
 
-noreferrer	
+noreferrer
 Prevents the browser, when navigating to another page, to send this page address, or any other value, as referrer via the Referer: HTTP header.
 (In Firefox, before Firefox 37, this worked only in links found in pages. Links clicked in the UI, like "Open in a new tab" via the contextual menu, ignored this).
 
-nofollow	Indicates that the linked document is not endorsed by the author of this one, for example if it has no control over it, if it is a bad example or if there is commercial relationship between the two (sold link). This link type may be used by some search engines that use popularity ranking techniques.
+nofollow Indicates that the linked document is not endorsed by the author of this one, for example if it has no control over it, if it is a bad example or if there is commercial relationship between the two (sold link). This link type may be used by some search engines that use popularity ranking techniques.
+
+---
+
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
+
+# Protect your users Privacy with default Referrer Policy
 
 ```html
 <a href="https://www.example.com" rel="noopener noreferrer nofollow">Link</a>
@@ -249,7 +259,7 @@ nofollow	Indicates that the linked document is not endorsed by the author of thi
 
 ---
 
-<!-- .slide: class="bg-white" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # Change form Method via `<input>` Attribut `formmethod`
 
@@ -259,7 +269,7 @@ Change http method to submit form for input elements via formmethod attribute
 
 ---
 
-<!-- .slide: class="bg-white" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # Simple autocompletion with `<datalist>`
 
@@ -295,7 +305,7 @@ Use-case
 
 ---
 
-<!-- .slide: class="bg-white" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # Built-in expandables with `<details>` & `<summary>`
 
@@ -324,7 +334,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
 
 ---
 
-<!-- .slide: class="bg-white" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # Integrate animated SVGs in HTML
 
@@ -334,10 +344,10 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Element
 
 ```html
 <div>
-<h1>SVG in HTML!</h1>
-<svg viewBox="0 0 64 64" width="64" height="64">
-  <circle id="spinner" cx="32" cy="32" r="16"></circle>
-</svg>
+  <h1>SVG in HTML!</h1>
+  <svg viewBox="0 0 64 64" width="64" height="64">
+    <circle id="spinner" cx="32" cy="32" r="16"></circle>
+  </svg>
 </div>
 ```
 
@@ -348,7 +358,7 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Element
 
   /* Refer to the animation  */
   animation-name: spinner-ani;
-  
+
   /* How should the animation be executed? */
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -356,13 +366,13 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Element
 
 /* What should happen during the animation? */
 @keyframes spinner-ani {
-    from {
-       fill: red;
-       r: 5;
-    }
-    to {
-       fill: yellow;
-       r: 32;
-    }
+  from {
+    fill: red;
+    r: 5;
+  }
+  to {
+    fill: yellow;
+    r: 32;
+  }
 }
 ```
