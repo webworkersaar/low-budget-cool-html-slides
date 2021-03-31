@@ -131,23 +131,6 @@ Explain Use-case
 
 ---
 
-# How to check for JavaScript availability without JavaScript?
-
-Simple way to check for JS availability with `<noscript>` and cookies:
-
-Requires cookies!
-
-```html
-<noscript>
-  <meta http-equiv="Set-Cookie" content="hasjs=false; path=/" />
-  <meta http-equiv="Refresh" content="0" />
-</noscript>
-```
-
-[Article](https://www.codeproject.com/Tips/1217469/How-to-Detect-if-Client-has-JavaScript-Enabled-Dis)
-
----
-
 # Display Form validation state via CSS
 
 https://jsfiddle.net/thomasdarimont/yp3z4o7b/11/
