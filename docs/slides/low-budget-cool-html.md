@@ -8,6 +8,32 @@
 
 <!-- .slide: data-state="layout-title" class="bg-dark" -->
 
+# Edit Content on any Page
+
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+The <code>contenteditable</code> attribute allows to enable live editing of text content for HTML elements.
+</blockquote>
+
+<code class="code-primary">Use-cases</code> Adjust content for screenshots.
+
+```html
+
+&lt;body contenteditable>
+...
+&lt;/body>
+
+```
+
+<ul>
+<li><a href="https://www.zeit.de/index" target="_blank">Let's make some good news</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content" target="_blank">Learn more about contenteditable on MDN</a></li>
+<ul>
+
+---
+
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
+
 # `<a>` Element `ping` Attribute
 
 <blockquote>
