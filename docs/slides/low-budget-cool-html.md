@@ -55,7 +55,7 @@ A space-separated list of URLs. When the link is followed, the browser will send
 
 ```html
 <a
-  href="#/2/0/2"
+  href="#/3/0/2"
   ping="https://20210301webworkersaar.requestcatcher.com/callbacks/myping"
 >
   `ping` Example with local links
