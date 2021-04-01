@@ -36,7 +36,7 @@ A space-separated list of URLs. When the link is followed, the browser will send
 </a>
 ```
 
-<a href="#/2/0/2" ping="https://20210301webworkersaar.requestcatcher.com/callbacks/myping" >`ping` Example with local links</a>
+<a href="#/2/0/2" ping="https://20210301webworkersaar.requestcatcher.com/callbacks/myping" >`ping Example with local links`</a>
 
 <iframe src="https://20210301webworkersaar.requestcatcher.com/"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -98,44 +98,49 @@ With filename: `<a href="..." download="foo.html">`
 
 <blockquote>
  <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
-The :target CSS pseudo-class represents a unique element (the target element) with an id matching the URL's fragment.
+The <code>:target</code> CSS pseudo-class represents a unique element (the target element) with an id matching the URL's fragment.
 </blockquote>
 
-<code class="code-primary">Use-case</code> SPA
+<code class="code-primary">Use-case</code> SPA like View navigation.
 
 <code class="code-primary">Alternative</code> JS-based routing
 
 ---
 
-<!-- .slide: class="bg-dark" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # CSS :target selector
-
-## <a href="https://codesandbox.io/s/css-target-selector-ow5vq" target="_blank">Example</a>
-
----
-
-<!-- .slide: class="bg-dark" -->
-
-## Example for `:target` Selector
-
-<a href="https://john-doe.neocities.org/#home" target="_blank">john-doe.neocities.org</a>
+<ul>
+<li><a href="https://codesandbox.io/s/css-target-selector-ow5vq" target="_blank"><code>:target Selector Example 1</code></a></li>
+<li><a href="https://john-doe.neocities.org/#home" target="_blank"><code>:target Selector Example 2</code></a></li>
+</ul>
 
 ---
 
 <!-- .slide: data-state="layout-title" class="bg-dark" -->
 
-# HTML & CSS for wrapping long words
+# Dealing with long words in Markup
 
-<code class="code-primary">Use-case</code> Readability
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+Controlling the word-breaks in long words.
+</blockquote>
 
-<code class="code-primary">Alternatives</code> <a href="https://www.cjcid.com/articles/wrapping-long-words-css-html/" target="_blank">A lot!</a>
+<ul>
+<li>Using the <code>&lt;wbr></code> element</li>
+<li>Using the “soft hyphen” <code>&amp;shy;</code> unicode character</li>
+<li>Using CSS propertoes like <code>work-break</code>,<code>white-space</code> or <code>overflow-wrap</code> etc.</li>
+</ul>
+
+<code class="code-primary">Use-case</code> Improve readability
+
+<code class="code-primary">Alternatives</code> <a href="https://www.cjcid.com/articles/wrapping-long-words-css-html/" target="_blank">Plenty of</a>
 
 ---
 
 <!-- .slide: data-state="layout-title" class="bg-dark" -->
 
-# HTML and controlled Word-breaks
+# Control Word-breaks with HTML
 
 ## <a href="../examples/wbr-word-break.html" target="_blank">Example</a>
 
@@ -145,7 +150,7 @@ The :target CSS pseudo-class represents a unique element (the target element) wi
 
 <!-- .slide: data-state="layout-title" class="bg-dark" -->
 
-# CSS and controlled Word-breaks
+# Control Word-breaks with CSS
 
 ## <a href="https://www.cjcid.com/articles/wrapping-long-words-css-html/#white-space" target="_blank">Example</a>
 
@@ -155,6 +160,11 @@ The :target CSS pseudo-class represents a unique element (the target element) wi
 
 # Inline Text Markup
 
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+Allows to specify additional text-level semantics.
+</blockquote>
+
 ```html
 <h1>Inline Text Markup</h1>
 <h2><pre>kbd</pre></h2>
@@ -162,11 +172,21 @@ The :target CSS pseudo-class represents a unique element (the target element) wi
   Please press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Entf</kbd> to close the
   app.
 </p>
-<h2>sub and sup</h2>
+
+<h2>sub, sup and var</h2>
 <p>H<sub>2</sub>O</p>
-<p>Satz des Pythagoras: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+
+<p>Satz des Pythagoras: 
+<var>a</var><sup>2</sup> + <var>b</var><sup>2</sup> = <var>c</var><sup>2</sup>
+</p>
+
 <h2><del>del</del>, <ins>ins</ins></h2>
 <p>HTML <del>sucks</del> <ins>rocks</ins>!</p>
+
+<p>Marking text:
+  This you can <mark>mark text</mark> to highlight a reference.
+  </p>
+
 ```
 
 <iframe src="../examples/inline-text-markup.html" style="width:100%; height: 50vh; border:0; border-radius: 4px; overflow:hidden;"></iframe>
@@ -177,12 +197,18 @@ The :target CSS pseudo-class represents a unique element (the target element) wi
 
 # Display Form Validation State via CSS
 
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+Allows quick feedback to users. Validations can also be customized with JavaScript.
+</blockquote>
+
 ```html
 <form>
   <label for="email">Email</label>
   <input type="email" 
     id="email" 
-    name="email" 
+    name="myemail" 
+    autocomplete="off"
     placeholder="Enter your email"
     >
   <span></span>
@@ -233,14 +259,15 @@ input[type='email']:valid + span::after {
   <label for="email">Email</label>
   <input type="email" 
     id="email" 
-    name="email" 
+    name="myemail" 
+    autocomplete="off" 
     placeholder="Enter your email"
     >
   <span></span>
 </form>
 </code>
 
-<a href="https://jsfiddle.net/thomasdarimont/yp3z4o7b/11/" target="_blank">Form Validation State Example</a>
+<a href="https://jsfiddle.net/thomasdarimont/yp3z4o7b/11/" target="_blank">Form validation example</a>
 
 ---
 
@@ -248,160 +275,77 @@ input[type='email']:valid + span::after {
 
 # Fine-tuning `<input>` elements for File Uploads
 
-File upload -> Restrict file types
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+Allows to control uploadable files, by restricting allowed file types and allowing selection multiple file.
+</blockquote>
 
 `<input type="file" accept=".xls,.xlsx" />`
 
-Allow upload of multiple files, or emails via `multiple` attribute.
+You can allow upload of multiple files via `multiple` attribute.
 
-- Allow to specify multiple files via `<input type=”file” multiple>`
-
-- Allow to specify multiple comma separated email addresses via `<input type=”email” multiple>`
-
-<style>
-  input[type='email'] {
-  width: 400px;
-}
-
-input[type='email']:invalid {
-  border: 1px solid red;
-}
-
-input[type='email']:invalid + span::after {
-    color:red;
-    content: " x";
-}
-
-input[type='email']:valid + span::after {
-    color:green;
-    content: " ✔";
-}
-</style>
-<form>
-  <label for="email">Email</label>
-  <input type="email" 
-    id="email" 
-    name="email" 
-    placeholder="Enter your email"
-    multiple
-    >
-  <span></span>
-</form>
----
-
-<!-- .slide: data-state="layout-title" class="bg-dark" -->
-
-# Auto-completion in Forms
-
-The HTML autocomplete attribute is available on <input> elements that take a text or numeric value as input, <textarea> elements, <select> elements, and <form> elements. autocomplete lets web developers specify what if any permission the user agent has to provide automated assistance in filling out form field values, as well as guidance to the browser as to the type of information expected in the field.
-
-For example:
-- "off"
-- "on"
-- "name"
-- "email"
-- "username"
-- "new-password"
-- "current-password"
-- "one-time-code"
-- ... any many many more
-
-[Article](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values)
+```html
+<input type=”file” multiple>
+```
 
 ---
 
 <!-- .slide: data-state="layout-title" class="bg-dark" -->
 
-# Lazy-Loading for Images
+# Control auto-completion in Forms
 
 <blockquote>
  <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
-Lazy loading is a strategy to identify resources as non-blocking (non-critical) and load these only when needed. It's a way to shorten the length of the critical rendering path, which translates into reduced page load times.
+The HTML <code>autocomplete</code> attribute is available on <code>&lt;input></code> elements that take a text or numeric value as input, <code>&lt;textarea></code> elements, <code>&lt;select></code> elements, and <code>&lt;form></code> elements. <code>autocomplete</code> lets web developers specify what automated assistance in filling out form field values is provided.
 </blockquote>
 
-Indicates how the browser should load the image:
-
-- eager: Loads the image immediately, regardless of whether or not the image is currently within the visible viewport (default).
-- lazy: Defers loading the image until it reaches a calculated distance from the viewport, as defined by the browser.
-
-```html
-<img src="foo.png" loading="lazy" />
-```
-
-[Article](https://web.dev/browser-level-image-lazy-loading/)
-
----
-
-<!-- .slide: data-state="layout-title" class="bg-dark" -->
-
-## Example Lazy-Loading
-
-<a href="https://sczvj.sse.codesandbox.io/lazy" target="_blank">Lazy Image loading example</a>
-
-<a href="https://codesandbox.io/s/admiring-wind-sczvj?file=/src/lazy.html" target="_blank">Code</a>
+Some examples for the <code>autocomplete</code> attribute
+<ul>
+<li><code>off</code></li>
+<li><code>on</code></li>
+<li><code>name</code></li>
+<li><code>email</code></li>
+<li><code>username</code></li>
+<li><code>new-password</code></li>
+<li><code>current-password</code></li>
+<li><code>one-time-code</code></li>
+<li>... any many many more <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values">as shown in this article</a></li>
+</ul>
 
 ---
 
 <!-- .slide: data-state="layout-title" class="bg-dark" -->
 
-# Additional values for `rel` attribute of the `<a>` element.
+# Adjust Form behaviour via `<input>`
 
-Explain the problem
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+Sometimes it is useful to change the form behaviour for specifc input fields.
+</blockquote>
 
-https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types
+<code class="code-primary">Use-case</code> handle different form submission via single form.
 
-- referrer
-- opener
-- follow
+<ul>
+<li><code>formaction</code> URL to use for form submission.</li>
+<li><code>formmethod</code> HTTP method to use for form submission.</li>
+<li><code>formnovalidate</code> Bypass form control validation for form submission.</li>
+<li><code>formtarget</code> The browsing context into which to load the response returned by the server after submitting the form.</li>
+</ul>
 
-nofollow Indicates that the linked document is not endorsed by the author of this one, for example if it has no control over it, if it is a bad example or if there is commercial relationship between the two (sold link). This link type may be used by some search engines that use popularity ranking techniques.
-
-noreferrer
-Prevents the browser, when navigating to another page, to send this page address, or any other value, as referrer via the Referer: HTTP header.
-(In Firefox, before Firefox 37, this worked only in links found in pages. Links clicked in the UI, like "Open in a new tab" via the contextual menu, ignored this).
-
-nofollow Indicates that the linked document is not endorsed by the author of this one, for example if it has no control over it, if it is a bad example or if there is commercial relationship between the two (sold link). This link type may be used by some search engines that use popularity ranking techniques.
-
----
-
-<!-- .slide: data-state="layout-title" class="bg-dark" -->
-
-# Protect your users Privacy with default Referrer Policy
-
-There are three fundamental values of the rel attribute of the anchor tag. They are noreferrer, noopener, and nofollow.
-
-- rel="noopener" you use on all links opening in new tabs using the target _blank. There are security implications if you don’t use the noopener value on your links opening in new tabs. A malicious attacker can use the window.opener object to change the content and location of the originating page.
-- rel="noreferrer" can serve a similar purpose as the noopener, especially in the older browsers. Hence, it makes sense to use them both. Additionally, noreferrer can affect your analytics and report traffic as direct instead of referral.
-- rel="nofollow" will inform search engines not to pass the link juice to the linked page, and it will not pass PageRank. You can consider it as a value which is used when you want to link to some another page but without “endorsing” it. It is the only rel value on this list with a tangible effect on SEO efforts.
-
-
-```html
-<a href="https://www.example.com" rel="noopener noreferrer nofollow">Link</a>
-```
-
-[Article](https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/)
+[See more about input elements here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
 ---
 
 <!-- .slide: data-state="layout-title" class="bg-dark" -->
 
-# Change form Method via `<input>` Attribut `formmethod`
+# Simple auto-completion with `<datalist>`
 
-Change http method to submit form for input elements via formmethod attribute
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+The HTML <code>&lt;datalist></code> element contains a set of <code>&lt;option></code> elements that represent the options available to choose from within other controls.
+</blockquote>
 
-[Artikel](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod)
-
----
-
-<!-- .slide: data-state="layout-title" class="bg-dark" -->
-
-# Simple autocompletion with `<datalist>`
-
-The HTML <datalist> element contains a set of <option> elements that represent the permissible or recommended options available to choose from within other controls.
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist">Datalist at MDN</a>
-
-Use-case
+<code class="code-primary">Use-case</code> provide a lean auto-completion without JavaScript.
 
 ```html
 <label for="ice-cream-choice">Choose a flavor:</label>
@@ -409,6 +353,7 @@ Use-case
 
 <datalist id="ice-cream-flavors">
   <option value="Chocolate"></option>
+  <option value="Chai-Latte"></option>
   <option value="Coconut"></option>
   <option value="Mint"></option>
   <option value="Strawberry"></option>
@@ -421,19 +366,25 @@ Use-case
 
 <datalist id="ice-cream-flavors">
   <option value="Chocolate"></option>
+  <option value="Chai-Latte"></option>
   <option value="Coconut"></option>
   <option value="Mint"></option>
   <option value="Strawberry"></option>
   <option value="Vanilla"></option>
 </datalist>
 
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist">See more about datalist on MDN</a>
+
 ---
 
 <!-- .slide: data-state="layout-title" class="bg-dark" -->
 
-# Built-in expandables with `<details>` & `<summary>`
+# Custom details sections
 
-The HTML Details Element (`<details>`) creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label must be provided using the `<summary>` element.
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+The HTML Details Element <code>&lt;details></code> creates a disclosure widget in which information is visible only when the widget is toggled into an <code>"open"</code> state. A summary or label must be provided using the <code>&lt;summary></code> element.
+</blockquote>
 
 ```html
 <details>
@@ -454,17 +405,84 @@ The HTML Details Element (`<details>`) creates a disclosure widget in which info
   recommended.</p>
 </details>
 
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">See more about details on MDN</a>
+
+
 
 ---
 
 <!-- .slide: data-state="layout-title" class="bg-dark" -->
 
-# Integrate animated SVGs in HTML
+# Lazy-Loading of Images
 
-https://developer.mozilla.org/en-US/docs/Web/SVG/Element
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+Lazy loading is a strategy to identify resources as non-blocking (non-critical) and load these only when needed. It's a way to shorten the length of the critical rendering path, which translates into reduced page load times.
+</blockquote>
 
-<a href="https://jsfiddle.net/thomasdarimont/wm3Lh0fu/4/" target="_blank">Animated SVG Example</a>
+The <code>loading</code> attribute of an <code>&lt;img></code> element indicates how the browser should load the image.
+
+<ul>
+<li><code>eager</code> Loads the image immediately, regardless of whether or not the image is currently within the visible viewport (default).</li> 
+<li><code>lazy</code> Defers loading the image until it reaches a calculated distance from the viewport, as defined by the browser.</li>
+</ul>
+
+```html
+<img src="foo.png" loading="lazy" />
+```
+
+[This article explains the loading attribute in depth](https://web.dev/browser-level-image-lazy-loading/)
+
+---
+
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
+
+## Lazy-Loading of Images in Action
+
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+You can speed up the loading of a page quite a but by using lazy loading.</blockquote>
+
+<a href="https://sczvj.sse.codesandbox.io/lazy" target="_blank">Lazy Image loading example</a>
+
+<a href="https://codesandbox.io/s/admiring-wind-sczvj?file=/src/lazy.html" target="_blank">Code</a>
+
+---
+
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
+
+# Adjust data sent when clicking an `<a>`
+
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+Sometimes you want to adjust what information is sent when you click on a link. For this you can use the <code>rel</code> attribute of a <code>&lt;a></code> element.
+</blockquote>
+
+<ul>
+<li><code>noreferrer</code> Prevents the browser, when navigating to another page, to send this page address, or any other value, as referrer via the Referer: HTTP header.</li>
+<li><code>noopener</code> Instructs the browser to open the link without granting the new browsing context access to the document that opened it. This means Window.opener will be null.</li>
+<li><code>nofollow</code> Indicates that the linked document is not endorsed by the author of this one, for example if it has no control over it, if it is a bad example or if there is commercial relationship between the two (sold link).</li>
+</ul>
+
+```html
+<a href="https://www.example.com" rel="noopener noreferrer nofollow">Link</a>
+```
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types">More about different link types on MDN</a></li>
+<li><a href="https://pointjupiter.com/what-noopener-noreferrer-nofollow-explained/">More about policies like noopener noreferrer nofollow</a></li>
+</ul>
+
+---
+
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
+
+# Embed SVGs in HTML
+
+<blockquote>
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+Sometimes it is useful to integrate <code>&lt;svg></code> elements directly into the DOM of your page instead of loading them as an image.
+</blockquote>
 
 ```html
 <div>
@@ -500,3 +518,15 @@ https://developer.mozilla.org/en-US/docs/Web/SVG/Element
   }
 }
 ```
+
+<a href="https://jsfiddle.net/thomasdarimont/wm3Lh0fu/4/" target="_blank">Animated SVG Example</a>
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element">More about the svg element on MDN</a>
+
+---
+
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
+
+# What's your favorite Low-Budget but cool HTML trick?
+
+???
