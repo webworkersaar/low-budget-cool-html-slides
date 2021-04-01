@@ -62,7 +62,7 @@ A space-separated list of URLs. When the link is followed, the browser will send
 </a>
 ```
 
-<a href="#/2/0/2" ping="https://20210301webworkersaar.requestcatcher.com/callbacks/myping" >`ping Example with local links`</a>
+<a href="#/3/0/2" ping="https://20210301webworkersaar.requestcatcher.com/callbacks/myping" >`ping Example with local links`</a>
 
 <iframe src="https://20210301webworkersaar.requestcatcher.com/"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
