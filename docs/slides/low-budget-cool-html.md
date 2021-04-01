@@ -335,7 +335,7 @@ Some examples for the <code>autocomplete</code> attribute
 <li><code>new-password</code></li>
 <li><code>current-password</code></li>
 <li><code>one-time-code</code></li>
-<li>... any many many more <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values">as shown in this article</a></li>
+<li>... and many many more <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values">as shown in this article</a></li>
 </ul>
 
 ---
